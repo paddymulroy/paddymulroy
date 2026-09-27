@@ -1,94 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education &amp; Courses – Patrick Mulroy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education &amp; Courses | Patrick Mulroy</title>
+  <meta name="description" content="Education, professional development and ongoing learning." />
+  <meta property="og:title" content="Education &amp; Courses | Patrick Mulroy" />
+  <meta property="og:description" content="Education, professional development and ongoing learning." />
+  <meta name="theme-color" content="#0f4d38" />
+  <meta name="color-scheme" content="light" />
+  <link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <div class="nav-logo"><a href="index.html" style="color:inherit; text-decoration:none;">Patrick <span>Mulroy</span></a></div>
-      <ul class="nav-links">
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">Patrick Mulroy</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><svg class="icon i-open" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></svg><svg class="icon i-close" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="systems.html">Systems &amp; Programs</a></li>
-        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="education.html" aria-current="page">Education</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </header>
 
-  <!-- Page Hero -->
-  <div class="page-hero">
-    <p class="section-label">Learning &amp; Development</p>
-    <h1>Education &amp; Courses</h1>
-    <p>My academic background, professional development and ongoing learning.</p>
-  </div>
+  <main id="main">
 
-  <div class="container">
-    <div class="section">
-
-      <!-- Coming Soon notice -->
-      <div style="text-align:center; padding:3rem 1rem;">
-        <div style="font-size:3rem; margin-bottom:1.5rem;">📚</div>
-        <h2 style="color:#111827; margin-bottom:0.75rem;">More detail coming soon</h2>
-        <p style="color:#6b7280; max-width:500px; margin:0 auto 2rem;">
-          This page is being built out with full details of formal qualifications, professional certifications and courses.
-          In the meantime, feel free to get in touch and I can walk you through my background directly.
-        </p>
-        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    <div class="page-top">
+    <div class="wrap page-head page-head-split">
+      <div>
+        <h1 class="enter" style="--i:0">Education &amp; Courses</h1>
+        <p class="lead enter" style="--i:1">Leadership training, industry certifications and formal education.</p>
       </div>
+      <figure class="enter" style="--i:2">
+        <img src="images/education-award.jpg" width="1200" height="900" alt="Paddy holding an award at a black-tie awards night" />
+      </figure>
+    </div>
+    </div>
 
-      <hr class="divider" />
-
-      <!-- Key learning areas -->
-      <div style="margin-top:2rem;">
-        <p class="section-label">Areas of Development</p>
-        <h2 class="section-title">Professional Learning</h2>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-icon">🎓</div>
-            <h3>Leadership &amp; Management</h3>
-            <p>Formal and on-the-job development in people management, coaching, and organisational leadership across multinational environments.</p>
+    <section style="padding-top:clamp(32px,4vw,48px)">
+      <div class="wrap">
+        <div class="employer">
+          <div class="employer-meta reveal">
+            <h2>Leadership and management</h2>
+            <p>Training and accreditations</p>
           </div>
-          <div class="card">
-            <div class="card-icon">📞</div>
-            <h3>Contact Centre Operations</h3>
-            <p>Deep practical expertise in workforce management, SLA frameworks, KPI reporting and quality assurance in contact centre settings.</p>
+          <div class="roles">
+            <article class="role reveal" style="--i:0">
+              <h3>Manage People Effectively</h3>
+              <p class="role-where">Australian Institute of Management</p>
+            </article>
+            <article class="role reveal" style="--i:1">
+              <h3>Authentic Leadership</h3>
+              <p>How to be a more authentic leader.</p>
+            </article>
+            <article class="role reveal" style="--i:2">
+              <h3>ILM Levels 1, 2 &amp; 3 in Team Leading</h3>
+              <p class="role-where">Certified by the Institute of Leadership &amp; Management (ILM)</p>
+              <p>Team management, motivation and human resources procedures.</p>
+            </article>
+            <article class="role reveal" style="--i:3">
+              <h3>IBM Advanced Blue Management</h3>
+              <p class="role-where">IBM</p>
+              <p>Five-day intensive training on being a better, more adaptable and efficient leader.</p>
+            </article>
           </div>
-          <div class="card">
-            <div class="card-icon">🧑‍💼</div>
-            <h3>Human Resources</h3>
-            <p>Hands-on HR experience encompassing employee relations, recruitment, performance management, ER/IR, change management and TUPE.</p>
+        </div>
+        <div class="employer">
+          <div class="employer-meta reveal">
+            <h2>Industry certifications</h2>
+            <p>IT service management and insurance</p>
           </div>
-          <div class="card">
-            <div class="card-icon">⚙️</div>
-            <h3>Process Improvement</h3>
-            <p>Continuous improvement and lean process thinking applied across IT service desks, home appliance aftersales and insurance claims operations.</p>
+          <div class="roles">
+            <article class="role reveal" style="--i:0">
+              <p class="role-dates num">2014</p>
+              <h3>ITIL Foundation Certificate</h3>
+              <p class="role-where">Certified by Axelos</p>
+            </article>
+            <article class="role reveal" style="--i:1">
+              <p class="role-dates num">Apr 2008</p>
+              <h3>Insurance Foundation Certificate (IFC), Gen 2A &amp; B</h3>
+              <p class="role-where">Certified by the Insurance Institute of Ireland</p>
+            </article>
+          </div>
+        </div>
+        <div class="employer">
+          <div class="employer-meta reveal">
+            <h2>Education</h2>
+            <p>Drogheda, Ireland</p>
+          </div>
+          <div class="roles">
+            <article class="role reveal" style="--i:0">
+              <h3>Travel &amp; Tourism, Airport Procedure Programme Certificate</h3>
+              <p class="role-where">Drogheda Institute of Further Education (DIFE)</p>
+              <p>Certified by City &amp; Guilds London, FETAC Dublin and ATRS.</p>
+            </article>
+            <article class="role reveal" style="--i:1">
+              <h3>Primary and secondary school</h3>
+              <p class="role-where">St Joseph&rsquo;s CBS, Drogheda</p>
+            </article>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
+    <section class="rule">
+      <div class="wrap">
+        <div class="section-head reveal"><h2>Areas of development</h2></div>
+        <div class="areas">
+          <div class="area reveal"><h3>Leadership and management</h3><p>Formal and on-the-job development in people management, coaching and organisational leadership across multinational environments.</p></div>
+          <div class="area reveal" style="--i:1"><h3>Contact centre operations</h3><p>Deep practical expertise in workforce management, SLA frameworks, KPI reporting and quality assurance.</p></div>
+          <div class="area reveal"><h3>Human resources</h3><p>Hands-on HR experience across employee relations, recruitment, performance management, ER/IR, change management and TUPE.</p></div>
+          <div class="area reveal" style="--i:1"><h3>Process improvement and delivery</h3><p>Continuous improvement, lean thinking and project delivery across IT service desks, home appliance aftersales and insurance claims.</p></div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
+  </main>
+
   <footer class="footer">
-    <div class="footer-inner">
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="systems.html">Systems &amp; Programs</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <p>&copy; 2024 Patrick Mulroy · Melbourne, VIC · <a href="https://www.linkedin.com/in/patrick-mulroy-37317121/" target="_blank" style="color:#6b7280;">LinkedIn</a></p>
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="index.html">Patrick Mulroy</a>
+        <small>&copy; 2026 Patrick Mulroy</small>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="systems.html">Systems &amp; Programs</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="mailto:paddymulroy@gmail.com"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg>Email</a>
+        <a href="https://www.linkedin.com/in/patrick-mulroy-37317121/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,26H40A14,14,0,0,0,26,40V216a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V40A14,14,0,0,0,216,26Zm2,190a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2ZM94,112v64a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm88,28v36a6,6,0,0,1-12,0V140a22,22,0,0,0-44,0v36a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0v2.11A34,34,0,0,1,182,140ZM98,84A10,10,0,1,1,88,74,10,10,0,0,1,98,84Z"/></svg>LinkedIn</a>
+      </div>
     </div>
   </footer>
 
+  <script src="site.js" defer></script>
 </body>
 </html>
