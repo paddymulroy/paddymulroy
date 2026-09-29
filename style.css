@@ -442,3 +442,13 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 .role-logo{height:16px;width:auto;vertical-align:-3px;margin-left:8px;display:inline-block}
 .logo-strip li.wm img{height:14px;max-width:84px}
 .logo-strip li.wm.infosys img{height:26px}
+
+/* Industries tile logos (single-colour, embedded) */
+.tile{position:relative}
+.tile .tile-logos{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:auto;padding-bottom:28px}
+.tile .tile-logos + *{margin-top:0}
+.tile .years:has(+ .tile-logos){margin-bottom:0;padding-bottom:14px}
+.tile-logo{display:block;height:34px;width:calc(34px * var(--ar));background:var(--accent);opacity:.55;-webkit-mask:var(--logo) center/contain no-repeat;mask:var(--logo) center/contain no-repeat}
+.tile-feature .tile-logo{background:#f3f6f2;opacity:.6;height:72px;width:calc(72px * var(--ar))}
+.tile-feature .tile-logos{gap:28px}
+@media (max-width:860px){.tile-logo{height:26px;width:calc(26px * var(--ar))}.tile-feature .tile-logo{height:52px;width:calc(52px * var(--ar))}}
