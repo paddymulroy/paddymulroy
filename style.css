@@ -432,15 +432,13 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:24px;background:#fff;box-shadow:0 0 0 4px var(--pop)}
 
 
-/* Systems logo grid */
-.logo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:64px}
-.logo-grid li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 12px 12px;display:flex;flex-direction:column;align-items:center;gap:10px;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
-.logo-grid li:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.logo-grid img{height:40px;width:100%;max-width:120px;object-fit:contain}
-.logo-grid img{filter:grayscale(1) sepia(1) hue-rotate(95deg) saturate(2.2) brightness(.55) contrast(1.1);opacity:.7;transition:filter .3s var(--ease),opacity .3s var(--ease)}
-.logo-grid li:hover img{filter:none;opacity:1}
-.logo-grid span{font-size:.85rem;color:var(--muted);text-align:center}
+/* Systems logo strip */
+.logo-strip{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px}
+.logo-strip li{display:flex;align-items:center;gap:10px;padding:12px 18px;background:var(--surface);border-radius:999px;font-size:.95rem;font-weight:500}
+.logo-strip img{height:22px;width:auto;max-width:80px;object-fit:contain;filter:grayscale(1) sepia(1) hue-rotate(95deg) saturate(2.2) brightness(.55) contrast(1.1);opacity:.8}
 /* Experience company logos */
 .co-logo{background:#fff;border:1px solid var(--line);border-radius:14px;width:120px;height:72px;display:flex;align-items:center;justify-content:center;padding:14px;margin-bottom:18px}
 .co-logo img{max-width:100%;max-height:100%;object-fit:contain}
 .role-logo{height:16px;width:auto;vertical-align:-3px;margin-left:8px;display:inline-block}
+.logo-strip li.wm img{height:20px;max-width:110px}
+.logo-strip li.wm.infosys img{height:26px}
