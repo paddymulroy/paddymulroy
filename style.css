@@ -437,9 +437,6 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 .logo-strip li{display:flex;align-items:center;gap:7px;padding:7px 13px;background:var(--surface);border-radius:999px;font-size:.82rem;font-weight:500}
 .logo-strip img{height:16px;width:auto;max-width:60px;object-fit:contain;filter:grayscale(1) sepia(1) hue-rotate(95deg) saturate(2.2) brightness(.55) contrast(1.1);opacity:.8}
 /* Experience company logos */
-.co-logo{background:#fff;border:1px solid var(--line);border-radius:14px;width:120px;height:72px;display:flex;align-items:center;justify-content:center;padding:14px;margin-bottom:18px}
-.co-logo img{max-width:100%;max-height:100%;object-fit:contain}
-.role-logo{height:16px;width:auto;vertical-align:-3px;margin-left:8px;display:inline-block}
 .logo-strip li.wm img{height:14px;max-width:84px}
 .logo-strip li.wm.infosys img{height:26px}
 
@@ -452,4 +449,9 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 .tile-feature .tile-logo{background:#f3f6f2;opacity:.6;height:72px;width:calc(72px * var(--ar))}
 .tile-feature .tile-logos{gap:28px}
 @media (max-width:860px){.tile-logo{height:26px;width:calc(26px * var(--ar))}.tile-feature .tile-logo{height:52px;width:calc(52px * var(--ar))}}
-.role-logo-lg{display:block;height:44px;width:auto;margin:10px 0 0}
+
+/* Experience logos: single-colour, blended into the page */
+.co-logo,.role-logo{display:block;background:var(--accent);opacity:.55;-webkit-mask:var(--logo) left center/contain no-repeat;mask:var(--logo) left center/contain no-repeat}
+.co-logo{--h:48px;height:var(--h);width:calc(var(--h) * var(--ar));max-width:100%;margin-bottom:18px}
+.role-logo{display:inline-block;height:16px;width:calc(16px * var(--ar));vertical-align:-3px;margin-left:8px}
+.role-logo-lg{display:block;height:40px;width:calc(40px * var(--ar));margin:10px 0 0}
