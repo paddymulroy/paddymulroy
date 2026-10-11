@@ -470,3 +470,6 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 .bento .tile{justify-content:flex-start}
 .bento .tile .tile-logos{margin-bottom:0;padding-bottom:0;height:44px;margin-bottom:28px;flex-wrap:nowrap}
 .bento .tile .tile-logo{max-width:100%}
+
+/* Education header photo: show the full portrait */
+.page-head-split img.award-photo{aspect-ratio:auto;height:auto;max-height:520px;width:auto;max-width:100%;margin-left:auto;object-fit:contain}
