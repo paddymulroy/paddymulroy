@@ -473,3 +473,11 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 
 /* Education header photo: show the full portrait */
 .page-head-split img.award-photo{aspect-ratio:auto;height:auto;max-height:416px;width:auto;max-width:100%;margin-left:auto;object-fit:contain}
+
+/* Systems: level headings at the top of each category */
+.sys-head{display:grid;grid-template-columns:3fr repeat(3,3fr);gap:24px;align-items:end;padding-bottom:14px;border-bottom:1px solid var(--text)}
+.sys-head h2{margin-bottom:0}
+.sys-head strong{display:block;font-weight:500;font-size:.95rem}
+.sys-head span{font-size:.82rem;color:var(--muted)}
+.sys-head + .sys-row{border-top:0}
+@media (max-width:760px){.sys-head{grid-template-columns:1fr}.sys-head > div{display:none}}
