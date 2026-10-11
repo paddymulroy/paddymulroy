@@ -1,0 +1,16 @@
+// Contact form handler for mulroy.me.
+// Deployed by Cloudflare Workers Builds from this folder (root directory: worker).
+// The destination inbox is NOT stored here: set it as a secret called TO in the
+// Cloudflare dashboard (Worker > Settings > Variables and Secrets).
+{
+  "name": "mulroy-contact",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "mulroy.me/api/contact", "zone_name": "mulroy.me" }
+  ],
+  "send_email": [
+    { "name": "EMAIL" }
+  ]
+}

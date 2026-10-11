@@ -54,7 +54,9 @@
           <p class="citizen">I&rsquo;m an <strong>Irish and Australian citizen</strong> living in Melbourne, so no sponsorship is required. I&rsquo;m also open to remote, travel-based and relocation opportunities.</p>
         </div>
 
-        <form class="form reveal" style="--i:1" action="mailto:paddy@mulroy.me" method="post" enctype="text/plain">
+        <form class="form reveal" style="--i:1" action="/api/contact" method="post">
+          <p class="form-done" id="sent" tabindex="-1">Thanks, your message has been sent. I&rsquo;ll get back to you soon.</p>
+          <p class="form-fail" id="send-error" tabindex="-1">Sorry, your message couldn&rsquo;t be sent. Please email me at <a href="mailto:paddy@mulroy.me">paddy@mulroy.me</a>.</p>
           <h2>Send a message</h2>
           <div class="form-row">
               <div class="field">
@@ -88,8 +90,10 @@
                 <textarea id="message" name="message" required aria-describedby="message-err"></textarea>
                 <p class="err" id="message-err">Please add a short message.</p>
               </div>
+          <div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off" /></div>
           <button type="submit" class="btn btn-primary">Send message <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></button>
-          <p class="form-note">This opens your email app. You can also email me directly at <a href="mailto:paddy@mulroy.me">paddy@mulroy.me</a>.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Prefer email? Write to me directly at <a href="mailto:paddy@mulroy.me">paddy@mulroy.me</a>.</p>
         </form>
       </div>
     </section>

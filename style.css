@@ -522,3 +522,14 @@ section{padding:clamp(48px,6.5vw,84px) 0}
 .lv .chip-f{box-shadow:inset 0 0 0 1px #b9c4bd}
 @media (max-width:760px){.sys-cat{grid-template-columns:1fr}.lv{grid-template-columns:1fr;gap:6px}.lv>p{padding-top:0}}
 .now-logo{display:inline-block;height:1.15em;width:calc(1.15em * 1.19);vertical-align:-.3em;margin:0 .05em;background:currentColor;-webkit-mask:url(images/logos/iag.svg) center/contain no-repeat;mask:url(images/logos/iag.svg) center/contain no-repeat}
+
+/* Contact form sending states */
+.hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.form-status{margin-top:12px;font-size:.95rem;min-height:1.4em}
+.form-status.error{color:var(--error)}
+.form-done,.form-fail{display:none;padding:14px 18px;border-radius:14px;margin-bottom:18px;font-weight:500}
+.form-done{background:var(--surface-accent);color:var(--text)}
+.form-fail{background:#f6dedb;color:var(--error)}
+.form-done:target,.form-done.show,.form-fail:target,.form-fail.show{display:block}
+.form button[disabled]{opacity:.6;cursor:progress}
+.form-done,.form-fail{scroll-margin-top:110px}
