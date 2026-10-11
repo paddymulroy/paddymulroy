@@ -499,3 +499,7 @@ section{padding:clamp(48px,6.5vw,84px) 0}
 .hero{padding:clamp(32px,4.5vw,64px) 0 clamp(48px,6vw,76px)}
 .employer{padding:40px 0}
 .sys-group{padding:36px 0 4px}
+/* Systems: category title on its own line, level headings on the next */
+.sys-head{row-gap:14px}
+.sys-head h2{grid-column:1 / -1}
+.sys-head > div:nth-of-type(1){grid-column:2}
