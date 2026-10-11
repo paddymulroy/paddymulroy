@@ -459,3 +459,14 @@ h1,h2{font-weight:600;letter-spacing:-0.04em}
 /* Avatar beside name in top bar */
 .nav .brand{display:inline-flex;align-items:center;gap:10px}
 .brand-icon{width:34px;height:34px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--pop)}
+
+/* Industries: three equal tiles side by side */
+.bento{grid-template-columns:repeat(3,1fr);grid-template-rows:auto}
+.bento .tile,.bento .tile-feature{grid-row:auto;min-height:340px}
+.tile-feature .tile-logo{height:40px;width:calc(40px * var(--ar))}
+.tile-feature .tile-logos{gap:18px}
+.bento .tile h3{font-size:1.3rem}
+@media (max-width:960px){.bento{grid-template-columns:1fr}.bento .tile,.bento .tile-feature{min-height:0}.tile-feature .tile-logo{height:34px;width:calc(34px * var(--ar))}}
+.bento .tile{justify-content:flex-start}
+.bento .tile .tile-logos{margin-bottom:0;padding-bottom:0;height:44px;margin-bottom:28px;flex-wrap:nowrap}
+.bento .tile .tile-logo{max-width:100%}
